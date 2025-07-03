@@ -10,7 +10,7 @@ const ReviewList = () => {
 
   return (
     <div className="review-list">
-      <h2>📋 All Movie Reviews</h2>
+      <h2> All Movie Reviews</h2>
       {reviews.length === 0 ? (
         <p>No reviews submitted yet.</p>
       ) : (
@@ -18,9 +18,9 @@ const ReviewList = () => {
           {reviews.map((review, index) => (
             <li key={index} className="review-card">
               <strong>{review.name}</strong> reviewed <em>{review.movie}</em>
-              <br />⭐ Rating: {review.rating}/5
+              <br /> Rating: {review.rating}/5
               <br />
-              {review.comments && <p>📝 {review.comments}</p>}
+              {review.comments && <p> {review.comments}</p>}
             </li>
           ))}
         </ul>
